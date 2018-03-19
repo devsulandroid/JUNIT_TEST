@@ -43,6 +43,19 @@
                     </formats>
            </configuration>
        </plugin>
+       
+       <!-- javaNCSS -->
+       <plugin>
+            <groupId>org.codehaus.mojo</groupId>
+            <artifactId>javancss-maven-plugin</artifactId>
+            <version>2.1</version>
+            <configuration>
+                <ccnLimit>15</ccnLimit>
+                <ncssLimit>80</ncssLimit>
+            </configuration>
+        </plugin>
+       
+       
     </plugins>
   </build>
   <!-- Maven Report -->
@@ -67,6 +80,20 @@
            <artifactId>cobertura-maven-plugin</artifactId>
             <version>2.7</version>
        </plugin>
+       
+       
+       <!-- JDepend 플러그인 -->
+       <plugin>
+	          <groupId>org.codehaus.mojo</groupId>
+	          <artifactId>jdepend-maven-plugin</artifactId>
+	          <version>2.0</version>
+	   </plugin>
+	   
+	   <plugin>
+		      <groupId>org.codehaus.mojo</groupId>
+		      <artifactId>javancss-maven-plugin</artifactId>
+		      <version>2.1</version>
+	   </plugin>
       
     </plugins>
   </reporting>
